@@ -46,6 +46,10 @@
     --h1-font-weight:     700;
     --button-font-weight: 400;
 
+    /* size */
+    --sidebar: 400px;
+    --topbar: 100px;
+
     /* spacing */
     --gap-sm:   5px;
     --gap-md:   10px;
@@ -108,7 +112,7 @@ body {
     --h1-font-size:     calc(var(--base-h1-size) * var(--font-scale));
     --button-font-size: calc(var(--base-button-size) * var(--font-scale));
 
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     color:            var(--text-bl);
     font-family:      'Funnel Display', sans-serif;
     display:          flex;
@@ -282,6 +286,13 @@ table td:not(:first-child) {
 /* ====================== */
 /* ======END==RESET====== */
 /* ====================== */
+
+.app {
+    display: grid;
+    grid-template-columns: var(--sidebar) 1fr;
+    grid-template-rows: var(--topbar) 1fr;
+    height: 100vh;
+}
 
 /* Buttons */
 button {
