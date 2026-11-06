@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--gap-xl);
+    height: 100%;
 }
 
 .list-element a {
@@ -60,6 +61,21 @@
     gap: var(--gap-lg);
     color: var(--text-sec);
     font-weight: inherit;
+    transform: translateX(0);
+    transition:
+        color var(--anim-duration-fast) var(--anim-ease-out),
+        transform var(--anim-duration-fast) var(--anim-ease-out);
+}
+
+.list-element a:hover,
+.list-element a:focus-visible {
+    color: var(--text-bl);
+    transform: translateX(6px);
+}
+
+.list-element a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 6px;
 }
 
 .list-element.highlighted a {
@@ -82,9 +98,33 @@
     background-color: var(--background-primary);
     border-radius: var(--border-radius-sm);
     color: inherit;
+    transform: rotate(0deg);
+    transition:
+        background-color var(--anim-duration-fast) var(--anim-ease-out),
+        color var(--anim-duration-fast) var(--anim-ease-out),
+        transform var(--anim-duration-fast) var(--anim-ease-out);
+}
+
+.list-element a:hover i,
+.list-element a:focus-visible i {
+    background-color: var(--accent);
+    color: var(--text-wh);
+    transform: rotate(-12deg);
+}
+
+.list-element.settings {
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 .page-list span {
     font-size: var(--h1-font-size);
     font-weight: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .list-element a,
+    .list-element a i {
+        transition: none;
+    }
 }
