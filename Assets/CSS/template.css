@@ -28,3 +28,63 @@
     padding: var(--padding-top-bottom) var(--padding-left-right);
     border-radius: var(--border-radius-corner) 0 0 0;
 }
+
+.brand {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    font-size: var(--big-size);
+    font-family: var(--brand-font-family);
+    padding: var(--padding-top-bottom) var(--padding-left-right);
+}
+.brand a {
+    font-size: inherit;
+    font-weight: var(--h1-font-weight);
+}
+
+.page-list {
+    list-style: none;
+    font-size: var(--h1-size);
+    font-weight: var(--sidebar-light-weight);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xl);
+}
+
+.list-element a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-lg);
+    color: var(--text-sec);
+    font-weight: inherit;
+}
+
+.list-element.highlighted a {
+    color: var(--text-bl);
+    font-weight: var(--sidebar-medium-weight);
+}
+
+.list-element.highlighted a i {
+    color: var(--text-wh);
+    background-color: var(--accent);
+}
+
+.list-element a i {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;    
+    background-color: var(--background-primary);
+    border-radius: var(--border-radius-sm);
+    color: inherit;
+}
+
+.page-list span {
+    font-size: var(--h1-font-size);
+    font-weight: inherit;
+}
