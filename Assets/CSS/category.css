@@ -1,0 +1,12 @@
+main.content h1.title {
+    font-size: var(--big-font-size);
+    font-weight: var(--title-medium-weight);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 300px));
+    justify-content: space-between;
+    gap: var(--padding-top-bottom) var(--padding-left-right);
+    padding: var(--gap-15px) var(--gap-md) var(--gap-lg);
+}

@@ -1,0 +1,81 @@
+/* css styles for the index.html file */
+main.content h1.title {
+    font-size: var(--big-font-size);
+    font-weight: var(--title-medium-weight);
+}
+
+main.content .title-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--gap-md);
+    width: calc(100% - var(--gap-15px));
+    margin-left: auto;
+}
+
+main.content h2.subtitle {
+    font-size: var(--h1-font-size);
+    font-weight: var(--title-medium-weight);
+}
+
+.books-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    gap: var(--padding-left-right);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.book-element {
+    flex: none;
+    width: 300px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: var(--gap-sm);
+}
+
+.book-element img {
+    width: 300px;
+    height: 400px;
+    border-radius: var(--border-radius-lg);
+    margin-bottom: var(--gap-md);
+    border: 1px solid var(--border);
+}
+
+.book-element span.book-meta {
+    color: var(--text-sec);
+    font-size: var(--body-font-size);
+}
+
+.book-element p.book-title {
+    font-size: var(--h1-font-size);
+}
+
+main.content .title-div.categories {
+    margin-top: var(--padding-top-bottom);
+    gap: var(--gap-lg);
+    flex-wrap: wrap;
+}
+
+main.content .categories .btn {
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-btn);
+}
+
+main.content .categories .btn:focus-visible {
+    outline: 2px solid var(--text-bl);
+    outline-offset: var(--gap-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    main.content .categories .btn {
+        transition: none;
+        transform: none;
+    }
+}

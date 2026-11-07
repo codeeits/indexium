@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titles.discover</title>
+    <link rel="stylesheet" href="Assets/CSS/main.css">
+    <link rel="stylesheet" href="Assets/CSS/template.css">
+
+    <link rel="stylesheet" href="Assets/CSS/categories.css">
+    <link rel="stylesheet" href="Assets/CSS/index.css">
+
+    <link rel="preload" href="Assets/Fonts/FunnelDisplay-Variable.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="Assets/Fonts/BioRhyme-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/8279017fe2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="brand">
+            <a href="index.html" aria-label="indexium — acasă">indexium</a>
+        </div>
+        <nav class="topbar">
+            <div class=""></div>
+            <button class="btn btn-primary btn-cta cta-add-book">cta.add-book</button>
+        </nav>
+        <aside class="sidebar">
+            <ul class="page-list">
+                <li class="list-element discover highlighted">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>template.sidebar.discover</span>
+                    </a>
+                </li>
+                <li class="list-element index">
+                    <a href="indexlist.html">
+                        <i class="fa-solid fa-database"></i>
+                        <span>template.sidebar.index</span>
+                    </a>
+                </li>
+                <li class="list-element add">
+                    <a href="add.html">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>template.sidebar.add</span>
+                    </a>
+                </li>
+                <li class="list-element category">
+                    <a href="category.html">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>template.sidebar.category</span>
+                    </a>
+                </li>
+                <li class="list-element settings">
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>template.sidebar.settings</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1 class="title">titles.discover</h1>
+            <div class="title-div recently-added">
+                <h2 class="subtitle">titles.recently-added</h2>
+                <button type="button" class="btn btn-primary">template.recently-added.button</button>
+            </div>
+            <div class="books-list" role="region" aria-label="Recently added books" tabindex="0">
+                <div class="book-element">
+                    <img src="Assets/Images/book-cover.jpg" alt="Book Cover">
+                    <span class="book-meta">Author * Adkdk</span>
+                    <p class="book-title">Book Title</p>
+                </div>
+                <div class="book-element">
+                    <img src="Assets/Images/book-cover.jpg" alt="Book Cover">
+                    <span class="book-meta">Author * Adkdk</span>
+                    <p class="book-title">Book Title</p>
+                </div>
+                <div class="book-element">
+                    <img src="Assets/Images/book-cover.jpg" alt="Book Cover">
+                    <span class="book-meta">Author * Adkdk</span>
+                    <p class="book-title">Book Title</p>
+                </div>
+                <div class="book-element">
+                    <img src="Assets/Images/book-cover.jpg" alt="Book Cover">
+                    <span class="book-meta">Author * Adkdk</span>
+                    <p class="book-title">Book Title</p>
+                </div>
+                <div class="book-element">
+                    <img src="Assets/Images/book-cover.jpg" alt="Book Cover">
+                    <span class="book-meta">Author * Adkdk</span>
+                    <p class="book-title">Book Title</p>
+                </div>
+            </div>
+            <!-- categories preview, see category.html for the full list -->
+            <div class="title-div categories">
+                <h2 class="subtitle" id="categories-title">titles.categories</h2>
+                <a href="category.html" class="btn btn-primary">template.see-all.button</a>
+            </div>
+            <div class="categories-list" role="region" aria-labelledby="categories-title" tabindex="0">
+                <a class="category-element category-peach" href="category.html#fictiune" style="--i: 0;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-book-open"></i></span>
+                    </span>
+                    <span class="category-name">Ficțiune<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-sage" href="category.html#roman" style="--i: 1;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-feather-pointed"></i></span>
+                    </span>
+                    <span class="category-name">Roman<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-lavender" href="category.html#groaza" style="--i: 2;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-ghost"></i></span>
+                    </span>
+                    <span class="category-name">Ficțiune de groază<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-gold" href="category.html#basm" style="--i: 3;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                    </span>
+                    <span class="category-name">Basm<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+            </div>
+        </main>
+    </div>
+    <div class="toast">
+
+    </div>
+</body>
+</html>

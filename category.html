@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titles.categories</title>
+    <link rel="stylesheet" href="Assets/CSS/main.css">
+    <link rel="stylesheet" href="Assets/CSS/template.css">
+    <link rel="stylesheet" href="Assets/CSS/categories.css">
+    <link rel="stylesheet" href="Assets/CSS/category.css">
+
+    <link rel="preload" href="Assets/Fonts/FunnelDisplay-Variable.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="Assets/Fonts/BioRhyme-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/8279017fe2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="brand">
+            <a href="index.html" aria-label="indexium — acasă">indexium</a>
+        </div>
+        <nav class="topbar">
+            <div class=""></div>
+            <button class="btn btn-primary btn-cta cta-add-book">cta.add-book</button>
+        </nav>
+        <aside class="sidebar">
+            <ul class="page-list">
+                <li class="list-element discover">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>template.sidebar.discover</span>
+                    </a>
+                </li>
+                <li class="list-element index">
+                    <a href="indexlist.html">
+                        <i class="fa-solid fa-database"></i>
+                        <span>template.sidebar.index</span>
+                    </a>
+                </li>
+                <li class="list-element add">
+                    <a href="add.html">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>template.sidebar.add</span>
+                    </a>
+                </li>
+                <li class="list-element category highlighted">
+                    <a href="category.html" aria-current="page">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>template.sidebar.category</span>
+                    </a>
+                </li>
+                <li class="list-element settings">
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>template.sidebar.settings</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1 class="title" id="categories-title">titles.categories</h1>
+            <!-- category anchors also work from the discover page -->
+            <div class="categories-grid" aria-labelledby="categories-title">
+                <a class="category-element category-peach" id="fictiune" href="#fictiune" style="--i: 0;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-book-open"></i></span>
+                    </span>
+                    <span class="category-name">Ficțiune<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-sage" id="roman" href="#roman" style="--i: 1;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-feather-pointed"></i></span>
+                    </span>
+                    <span class="category-name">Roman<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-lavender" id="groaza" href="#groaza" style="--i: 2;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-ghost"></i></span>
+                    </span>
+                    <span class="category-name">Ficțiune de groază<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-gold" id="basm" href="#basm" style="--i: 3;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                    </span>
+                    <span class="category-name">Basm<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-rose" id="satira" href="#satira" style="--i: 4;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-masks-theater"></i></span>
+                    </span>
+                    <span class="category-name">Satiră<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-blue" id="science-fiction" href="#science-fiction" style="--i: 5;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-rocket"></i></span>
+                    </span>
+                    <span class="category-name">Science - Fiction<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-sage" id="fantasy" href="#fantasy" style="--i: 6;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-dragon"></i></span>
+                    </span>
+                    <span class="category-name">Fantasy<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-lavender" id="thriller" href="#thriller" style="--i: 7;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </span>
+                    <span class="category-name">Thriller<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-rose" id="poezie" href="#poezie" style="--i: 8;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-pen-nib"></i></span>
+                    </span>
+                    <span class="category-name">Poezie<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-peach" id="biografie" href="#biografie" style="--i: 9;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-user"></i></span>
+                    </span>
+                    <span class="category-name">Biografie<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-gold" id="filozofie" href="#filozofie" style="--i: 10;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-lightbulb"></i></span>
+                    </span>
+                    <span class="category-name">Filozofie<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+                <a class="category-element category-blue" id="istorie" href="#istorie" style="--i: 11;" lang="ro">
+                    <span class="category-art" aria-hidden="true">
+                        <span class="category-book"></span>
+                        <span class="category-book"></span>
+                        <span class="category-book"><i class="fa-solid fa-landmark"></i></span>
+                    </span>
+                    <span class="category-name">Istorie<span class="category-arrow" aria-hidden="true">→</span></span>
+                </a>
+            </div>
+        </main>
+    </div>
+    <div class="toast">
+
+    </div>
+</body>
+</html>

@@ -65,6 +65,8 @@
     --sidebar-medium-weight: 500;
     --sidebar-light-weight:  300;
 
+    --title-medium-weight: 500;
+
     /* size */
     --sidebar: 400px;
     --topbar: 100px;
@@ -131,7 +133,7 @@ body {
     --h2-font-size:     calc(var(--base-h2-size) * var(--font-scale));
     --h1-font-size:     calc(var(--base-h1-size) * var(--font-scale));
     --button-font-size: calc(var(--base-button-size) * var(--font-scale));
-    --big-size:         calc(var(--base-big-size) * var(--font-scale));
+    --big-font-size:         calc(var(--base-big-size) * var(--font-scale));
 
     background-color: var(--background-secondary);
     color:            var(--text-bl);
@@ -311,7 +313,7 @@ table td:not(:first-child) {
 
 .app {
     display: grid;
-    grid-template-columns: var(--sidebar) 1fr;
+    grid-template-columns: var(--sidebar) minmax(0, 1fr);
     grid-template-rows: var(--topbar) 1fr;
     height: 100vh;
 }

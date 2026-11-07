@@ -20,13 +20,15 @@
 }
 
 .content {
+    min-width: 0;
     grid-area: 2 / 2 / 3 / 3;
     background-color: var(--background-primary);
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: var(--padding-top-bottom) var(--padding-left-right);
+    padding: var(--padding-left-right);
     border-radius: var(--border-radius-corner) 0 0 0;
+    gap: var(--gap-md);
 }
 
 .brand {
@@ -35,7 +37,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: left;
-    font-size: var(--big-size);
+    font-size: var(--big-font-size);
     font-family: var(--brand-font-family);
     padding: var(--padding-top-bottom) var(--padding-left-right);
 }
